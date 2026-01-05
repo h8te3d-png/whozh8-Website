@@ -31,6 +31,12 @@ window.addEventListener('scroll', () => {
     sphere.rotation.x = scrollY * 0.01;
     cube.rotation.y = scrollY * 0.01;
     camera.position.y = scrollY * 0.001;
+
+    // Parallax effect
+    document.querySelectorAll('.parallax-bg').forEach((bg, index) => {
+        const rate = (index + 1) * 0.4;
+        bg.style.transform = `translateY(${scrollY * rate}px)`;
+    });
 });
 
 // Animation loop

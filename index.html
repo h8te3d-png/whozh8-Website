@@ -8,19 +8,38 @@
     <link href="https://fonts.googleapis.com/css2?family=Special+Gothic+Expanded+One&display=swap" rel="stylesheet">
 </head>
 <body>
-    <video id="background-video" autoplay muted loop>
-        <source src="https://example.com/background-video.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-    </video>
-    <div class="overlay"></div>
-
     <main>
-        <section id="hero" class="hero">
-            <h1 class="big-bold-text"><span>W</span><span>h</span><span>o</span><span>z</span><span>h</span><span>8</span></h1>
-            <p>Multi-Media Developer</p>
-
+        <section class="parallax-section">
+            <div class="parallax-bg bg1"></div>
+            <div class="content front">
+                <h1 class="big-bold-text"><span>W</span><span>h</span><span>o</span><span>z</span><span>h</span><span>8</span></h1>
+                <p>Multi-Media Developer</p>
+            </div>
         </section>
 
+        <section class="parallax-section">
+            <div class="parallax-bg bg2"></div>
+            <div class="content back">
+                <h2>About</h2>
+                <p>Passionate about creating stunning visuals.</p>
+            </div>
+        </section>
+
+        <section class="parallax-section">
+            <div class="parallax-bg bg3"></div>
+            <div class="content front">
+                <h2>Projects</h2>
+                <p>Innovative work in multimedia.</p>
+            </div>
+        </section>
+
+        <section class="parallax-section">
+            <div class="parallax-bg bg4"></div>
+            <div class="content back">
+                <h2>Contact</h2>
+                <p>Get in touch.</p>
+            </div>
+        </section>
     </main>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
     <script src="script.js"></script>
