@@ -93,15 +93,30 @@ body {
     z-index: 5;
 }
 
-.big-bold-text {
-    font-size: 16rem;
-    font-weight: 400;
-    font-family: 'Special Gothic Expanded One', sans-serif;
-    text-align: center;
+.text-svg {
     position: absolute;
     width: 100%;
-    left: 0;
-    margin: 0;
+    height: auto;
+}
+
+.row1 {
+    top: 5%;
+}
+
+.row2 {
+    top: 20%;
+}
+
+.row3 {
+    top: 35%;
+}
+
+.row4 {
+    top: 50%;
+}
+
+.row5 {
+    top: 65%;
 }
 
 .big-bold-text span {
