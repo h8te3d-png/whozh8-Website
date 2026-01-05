@@ -154,6 +154,36 @@ body {
     animation: slideRight 15s linear infinite;
 }
 
+.center-whozh8 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 30;
+    font-size: 8rem;
+    font-weight: 400;
+    font-family: 'Special Gothic Expanded One', sans-serif;
+    text-align: center;
+    animation: easeIn 3s ease-in forwards;
+    opacity: 0;
+}
+
+.center-whozh8 span {
+    display: inline-block;
+    animation: float 3s ease-in-out infinite;
+}
+
+@keyframes easeIn {
+    0% {
+        opacity: 0;
+        transform: translate(-50%, -50%) scale(0.5);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(-50%, -50%) scale(1);
+    }
+}
+
 .row1 .text {
     animation: slideRight 15s linear infinite;
 }
