@@ -93,10 +93,45 @@ body {
     z-index: 5;
 }
 
-.text-svg {
+.big-bold-text {
+    font-size: 16rem;
+    font-weight: 400;
+    font-family: 'Special Gothic Expanded One', sans-serif;
+    text-align: center;
     position: absolute;
     width: 100%;
-    height: auto;
+    left: 0;
+    margin: 0;
+}
+
+.big-bold-text span {
+    display: inline-block;
+    animation: float 3s ease-in-out infinite;
+}
+
+.text {
+    white-space: nowrap;
+    animation: slideRight 15s linear infinite;
+}
+
+.row1 .text {
+    animation: slideRight 15s linear infinite;
+}
+
+.row2 .text {
+    animation: slideLeft 15s linear infinite;
+}
+
+.row3 .text {
+    animation: slideRight 15s linear infinite;
+}
+
+.row4 .text {
+    animation: slideLeft 15s linear infinite;
+}
+
+.row5 .text {
+    animation: slideRight 15s linear infinite;
 }
 
 .row1 {
