@@ -14,20 +14,20 @@
 }
 
 @keyframes slideRight {
-    0%, 100% {
-        transform: translateX(0);
+    0% {
+        transform: translateX(-100vw);
     }
-    50% {
-        transform: translateX(300px);
+    100% {
+        transform: translateX(100vw);
     }
 }
 
 @keyframes slideLeft {
-    0%, 100% {
-        transform: translateX(0);
+    0% {
+        transform: translateX(100vw);
     }
-    50% {
-        transform: translateX(-300px);
+    100% {
+        transform: translateX(-100vw);
     }
 }
 
@@ -118,27 +118,27 @@ body {
 
 .row1 {
     top: 5%;
-    animation: slideRight 6s infinite ease-in-out;
+    animation: slideRight 8s linear infinite;
 }
 
 .row2 {
     top: 20%;
-    animation: slideLeft 6s infinite ease-in-out;
+    animation: slideLeft 8s linear infinite;
 }
 
 .row3 {
     top: 35%;
-    animation: slideRight 6s infinite ease-in-out;
+    animation: slideRight 8s linear infinite;
 }
 
 .row4 {
     top: 50%;
-    animation: slideLeft 6s infinite ease-in-out;
+    animation: slideLeft 8s linear infinite;
 }
 
 .row5 {
     top: 65%;
-    animation: slideRight 6s infinite ease-in-out;
+    animation: slideRight 8s linear infinite;
 }
 
 .hero {
