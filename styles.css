@@ -13,6 +13,24 @@
     }
 }
 
+@keyframes slideRight {
+    0%, 100% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(300px);
+    }
+}
+
+@keyframes slideLeft {
+    0%, 100% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(-300px);
+    }
+}
+
 
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -80,6 +98,9 @@ body {
     font-weight: 400;
     font-family: 'Special Gothic Expanded One', sans-serif;
     text-align: center;
+    position: absolute;
+    width: 100%;
+    left: 0;
     margin: 0;
 }
 
@@ -94,6 +115,38 @@ body {
 .big-bold-text span:nth-child(4) { animation-delay: 0.3s; }
 .big-bold-text span:nth-child(5) { animation-delay: 0.4s; }
 .big-bold-text span:nth-child(6) { animation-delay: 0.5s; }
+
+.row1 {
+    top: 5%;
+    animation: slideRight 6s infinite ease-in-out;
+}
+
+.row2 {
+    top: 20%;
+    animation: slideLeft 6s infinite ease-in-out;
+}
+
+.row3 {
+    top: 35%;
+    animation: slideRight 6s infinite ease-in-out;
+}
+
+.row4 {
+    top: 50%;
+    animation: slideLeft 6s infinite ease-in-out;
+}
+
+.row5 {
+    top: 65%;
+    animation: slideRight 6s infinite ease-in-out;
+}
+
+.hero {
+    height: 100vh;
+    position: relative;
+    text-align: center;
+    padding: 0 2rem;
+}
 
 .content h2 {
     font-size: 4rem;
