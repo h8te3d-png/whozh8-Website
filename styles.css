@@ -160,9 +160,9 @@ body {
     top: 20%;
     left: 50%;
     transform: translate(-50%, -20%);
-    z-index: 50;
-    font-size: 12rem;
-    font-weight: 900;
+    z-index: 30;
+    font-size: 8rem;
+    font-weight: 400;
     font-family: 'Special Gothic Expanded One', sans-serif;
     text-align: center;
     animation: bounceIn 2s ease-out forwards;
