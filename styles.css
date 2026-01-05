@@ -43,6 +43,8 @@ body {
     position: relative;
     height: 100vh;
     overflow: hidden;
+    border: 3px solid black;
+    box-sizing: border-box;
 }
 
 .parallax-bg {
@@ -60,11 +62,13 @@ body {
     position: relative;
     height: 100vh;
     overflow: hidden;
+    border: 3px solid black;
+    box-sizing: border-box;
 }
 
 .section-divider {
-    height: 3px;
-    background: linear-gradient(90deg, transparent, white, transparent);
+    height: 5px;
+    background: black;
     margin: 0;
 }
 
