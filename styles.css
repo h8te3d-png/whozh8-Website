@@ -139,19 +139,19 @@ body {
 }
 
 .row2 {
-    top: 20%;
-}
-
-.row3 {
     top: 35%;
 }
 
+.row3 {
+    top: 65%;
+}
+
 .row4 {
-    top: 50%;
+    top: 95%;
 }
 
 .row5 {
-    top: 65%;
+    top: 125%;
 }
 
 .big-bold-text span {
