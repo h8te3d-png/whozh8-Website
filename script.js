@@ -34,8 +34,9 @@ window.addEventListener('scroll', () => {
 
     // Parallax effect
     document.querySelectorAll('.parallax-bg').forEach((bg, index) => {
-        const rate = (index + 1) * 0.4;
-        bg.style.transform = `translateY(${scrollY * rate}px)`;
+        const rate = (index + 1) * 0.5;
+        const direction = index % 2 === 0 ? 1 : -1; // alternate direction
+        bg.style.transform = `translateX(${scrollY * rate * direction}px)`;
     });
 });
 
