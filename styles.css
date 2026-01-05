@@ -13,6 +13,11 @@
     }
 }
 
+@font-face {
+    font-family: 'Milker';
+    src: url('fonts/milker/Milker-Regular.ttf') format('truetype');
+}
+
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: black;
@@ -68,8 +73,9 @@ nav a {
 }
 
 .big-bold-text {
-    font-size: 4rem;
+    font-size: 16rem;
     font-weight: 900;
+    font-family: 'Milker', cursive;
     text-align: center;
 }
 
