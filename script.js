@@ -22,6 +22,16 @@ const cube = new THREE.Mesh(geometry2, material2);
 cube.position.set(5, 0, -10);
 scene.add(cube);
 
+// Load Blender GLB model
+const loader = new THREE.GLTFLoader();
+loader.load('models/Fivem DevlizRP.glb', (gltf) => {
+    gltf.scene.scale.set(0.1, 0.1, 0.1);
+    gltf.scene.position.set(0, 0, -5);
+    scene.add(gltf.scene);
+}, undefined, (error) => {
+    console.error('Error loading GLB:', error);
+});
+
 camera.position.z = 5;
 
 // Scroll reactive
