@@ -23,11 +23,14 @@ cube.position.set(5, 0, -10);
 scene.add(cube);
 
 // Load Blender GLB model
+let gltfModel;
 const loader = new THREE.GLTFLoader();
 loader.load('models/Fivem DevlizRP.glb', (gltf) => {
     gltf.scene.scale.set(0.3, 0.3, 0.3);
     gltf.scene.position.set(0, 0, -1);
+    gltf.scene.visible = false; // Initially hidden
     scene.add(gltf.scene);
+    gltfModel = gltf.scene;
 }, undefined, (error) => {
     console.error('Error loading GLB:', error);
 });
@@ -54,6 +57,16 @@ window.addEventListener('scroll', () => {
         const direction = sectionIndex % 2 === 0 ? 1 : -1; // alternate direction per section
         bg.style.transform = `translateX(${scrollY * rate * direction}px)`;
     });
+
+    // Control GLB visibility for Scene 1
+    if (gltfModel) {
+        const vh = window.innerHeight;
+        if (scrollY >= vh * 3 && scrollY < vh * 4) {
+            gltfModel.visible = true;
+        } else {
+            gltfModel.visible = false;
+        }
+    }
 });
 
 // Animation loop
