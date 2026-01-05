@@ -106,39 +106,51 @@ body {
 
 .big-bold-text span {
     display: inline-block;
-    animation: float 3s ease-in-out infinite;
 }
-
-.big-bold-text span:nth-child(1) { animation-delay: 0s; }
-.big-bold-text span:nth-child(2) { animation-delay: 0.1s; }
-.big-bold-text span:nth-child(3) { animation-delay: 0.2s; }
-.big-bold-text span:nth-child(4) { animation-delay: 0.3s; }
-.big-bold-text span:nth-child(5) { animation-delay: 0.4s; }
-.big-bold-text span:nth-child(6) { animation-delay: 0.5s; }
 
 .row1 {
     top: 5%;
+}
+
+.row1 span:nth-child(n) {
     animation: slideRight 8s linear infinite;
+    animation-delay: calc((var(--n) - 1) * 0.1s);
 }
 
 .row2 {
     top: 20%;
+}
+
+.row2 span:nth-child(n) {
     animation: slideLeft 8s linear infinite;
+    animation-delay: calc((var(--n) - 1) * 0.1s);
 }
 
 .row3 {
     top: 35%;
+}
+
+.row3 span:nth-child(n) {
     animation: slideRight 8s linear infinite;
+    animation-delay: calc((var(--n) - 1) * 0.1s);
 }
 
 .row4 {
     top: 50%;
+}
+
+.row4 span:nth-child(n) {
     animation: slideLeft 8s linear infinite;
+    animation-delay: calc((var(--n) - 1) * 0.1s);
 }
 
 .row5 {
     top: 65%;
+}
+
+.row5 span:nth-child(n) {
     animation: slideRight 8s linear infinite;
+    animation-delay: calc((var(--n) - 1) * 0.1s);
 }
 
 .hero {

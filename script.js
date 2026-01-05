@@ -46,6 +46,23 @@ function animate() {
 }
 animate();
 
+// Set staggered animation delays for spans
+document.querySelectorAll('.row1 span').forEach((span, index) => {
+    span.style.animationDelay = (index * 0.1) + 's';
+});
+document.querySelectorAll('.row2 span').forEach((span, index) => {
+    span.style.animationDelay = (index * 0.1) + 's';
+});
+document.querySelectorAll('.row3 span').forEach((span, index) => {
+    span.style.animationDelay = (index * 0.1) + 's';
+});
+document.querySelectorAll('.row4 span').forEach((span, index) => {
+    span.style.animationDelay = (index * 0.1) + 's';
+});
+document.querySelectorAll('.row5 span').forEach((span, index) => {
+    span.style.animationDelay = (index * 0.1) + 's';
+});
+
 // Resize
 window.addEventListener('resize', () => {
     camera.aspect = window.innerWidth / window.innerHeight;
