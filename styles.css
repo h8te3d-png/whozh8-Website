@@ -39,19 +39,19 @@ body {
 }
 
 .bg1 {
-    background-image: url('https://images.unsplash.com/photo-1518709268805-4e9042af2176?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');
+    background-image: url('images/bg1.jpg');
 }
 
 .bg2 {
-    background-image: url('https://images.unsplash.com/photo-1557804506-669a67965ba0?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');
+    background-image: url('images/bg2.jpg');
 }
 
 .bg3 {
-    background-image: url('https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');
+    background-image: url('images/bg3.jpg');
 }
 
 .bg4 {
-    background-image: url('https://images.unsplash.com/photo-1446776653964-20c1d3a81b06?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');
+    background-image: url('images/bg4.jpg');
 }
 
 .content {
