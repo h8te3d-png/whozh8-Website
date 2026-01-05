@@ -61,7 +61,7 @@ window.addEventListener('scroll', () => {
     // Control GLB visibility for Scene 1
     if (gltfModel) {
         const vh = window.innerHeight;
-        if (scrollY >= vh * 3 && scrollY < vh * 4) {
+        if (scrollY >= vh * 3.2 && scrollY < vh * 3.8) {
             gltfModel.visible = true;
         } else {
             gltfModel.visible = false;
