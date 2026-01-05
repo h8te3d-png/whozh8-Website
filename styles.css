@@ -62,6 +62,12 @@ body {
     overflow: hidden;
 }
 
+.section-divider {
+    height: 3px;
+    background: linear-gradient(90deg, transparent, white, transparent);
+    margin: 0;
+}
+
 .bg1.layer1 {
     background-image: url('images/bg1.jpg');
     z-index: -2;
