@@ -56,20 +56,44 @@ body {
     will-change: transform;
 }
 
-.bg1 {
+.bg1.layer1 {
     background-image: url('images/bg1.jpg');
+    z-index: -2;
 }
 
-.bg2 {
+.bg1.layer2 {
+    background-image: url('images/bg1.jpg');
+    z-index: -1;
+}
+
+.bg2.layer1 {
     background-image: url('images/bg2.jpg');
+    z-index: -2;
 }
 
-.bg3 {
+.bg2.layer2 {
+    background-image: url('images/bg2.jpg');
+    z-index: -1;
+}
+
+.bg3.layer1 {
     background-image: url('images/bg3.jpg');
+    z-index: -2;
 }
 
-.bg4 {
+.bg3.layer2 {
+    background-image: url('images/bg3.jpg');
+    z-index: -1;
+}
+
+.bg4.layer1 {
     background-image: url('images/bg4.jpg');
+    z-index: -2;
+}
+
+.bg4.layer2 {
+    background-image: url('images/bg4.jpg');
+    z-index: -1;
 }
 
 .content {
