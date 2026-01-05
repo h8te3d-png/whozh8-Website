@@ -15,19 +15,19 @@
 
 @keyframes slideRight {
     0% {
-        transform: translateX(-100vw);
+        transform: translateX(0);
     }
     100% {
-        transform: translateX(100vw);
+        transform: translateX(-20%);
     }
 }
 
 @keyframes slideLeft {
     0% {
-        transform: translateX(100vw);
+        transform: translateX(0);
     }
     100% {
-        transform: translateX(-100vw);
+        transform: translateX(20%);
     }
 }
 
@@ -109,13 +109,32 @@ body {
     animation: float 3s ease-in-out infinite;
 }
 
+.text {
+    white-space: nowrap;
+}
+
 .row1 {
     top: 5%;
 }
 
-.row1 span:nth-child(n) {
-    animation: slideRight 8s linear infinite;
-    animation-delay: calc((var(--n) - 1) * 0.1s);
+.row1 .text {
+    animation: slideRight 15s linear infinite;
+}
+
+.row2 .text {
+    animation: slideLeft 15s linear infinite;
+}
+
+.row3 .text {
+    animation: slideRight 15s linear infinite;
+}
+
+.row4 .text {
+    animation: slideLeft 15s linear infinite;
+}
+
+.row5 .text {
+    animation: slideRight 15s linear infinite;
 }
 
 .row2 {
