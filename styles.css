@@ -106,6 +106,7 @@ body {
 
 .big-bold-text span {
     display: inline-block;
+    animation: float 3s ease-in-out infinite;
 }
 
 .row1 {
