@@ -19,7 +19,7 @@
   "bugs": {
     "url": "https://github.com/h8te3d-png/whozh8-Website/issues"
   },
-  "homepage": "https://h8te3d-png.github.io/whozh8-Website",
+  "homepage": "https://whozh8.com",
   "dependencies": {
     "@react-three/drei": "^10.7.7",
     "@react-three/fiber": "^9.5.0",
