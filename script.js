@@ -8,35 +8,18 @@ renderer.domElement.style.top = '0';
 renderer.domElement.style.left = '0';
 renderer.domElement.style.zIndex = '-1';
 document.body.appendChild(renderer.domElement);
-
 // Add geometries
 const geometry1 = new THREE.SphereGeometry(1, 32, 32);
 const material1 = new THREE.MeshBasicMaterial({ color: 0x000000, wireframe: true });
 const sphere = new THREE.Mesh(geometry1, material1);
 sphere.position.set(-5, 0, -10);
 scene.add(sphere);
-
 const geometry2 = new THREE.BoxGeometry(2, 2, 2);
 const material2 = new THREE.MeshBasicMaterial({ color: 0x000000, wireframe: true });
 const cube = new THREE.Mesh(geometry2, material2);
 cube.position.set(5, 0, -10);
 scene.add(cube);
-
-// Load Blender GLB model
-let gltfModel;
-const loader = new THREE.GLTFLoader();
-loader.load('models/Fivem DevlizRP.glb', (gltf) => {
-    gltf.scene.scale.set(0.3, 0.3, 0.3);
-    gltf.scene.position.set(0, 0, -1);
-    gltf.scene.visible = false; // Initially hidden
-    scene.add(gltf.scene);
-    gltfModel = gltf.scene;
-}, undefined, (error) => {
-    console.error('Error loading GLB:', error);
-});
-
 camera.position.z = 5;
-
 // Scroll reactive
 let scrollY = 0;
 window.addEventListener('scroll', () => {
@@ -44,7 +27,6 @@ window.addEventListener('scroll', () => {
     sphere.rotation.x = scrollY * 0.01;
     cube.rotation.y = scrollY * 0.01;
     camera.position.y = scrollY * 0.001;
-
     // Parallax effect
     document.querySelectorAll('.parallax-bg').forEach((bg, index) => {
         let rate = 0.4;
@@ -55,28 +37,15 @@ window.addEventListener('scroll', () => {
         }
         const sectionIndex = Math.floor(index / 2);
         const direction = sectionIndex % 2 === 0 ? 1 : -1; // alternate direction per section
-        bg.style.transform = `translateX(${scrollY * rate * direction}px)`;
+        bg.style.transform = `translateX(px)`;
     });
-
-    // Control GLB visibility for Scene 1
-    if (gltfModel) {
-        const vh = window.innerHeight;
-        if (scrollY >= vh * 3.2 && scrollY < vh * 3.8) {
-            gltfModel.visible = true;
-        } else {
-            gltfModel.visible = false;
-        }
-    }
 });
-
 // Animation loop
 function animate() {
     requestAnimationFrame(animate);
     renderer.render(scene, camera);
 }
 animate();
-
-
 // Resize
 window.addEventListener('resize', () => {
     camera.aspect = window.innerWidth / window.innerHeight;
