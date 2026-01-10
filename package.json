@@ -1,0 +1,35 @@
+{
+  "name": "whozh8-website",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "start": "parcel index.html --open",
+    "build": "parcel build index.html",
+    "deploy": "gh-pages -d dist -r https://github.com/h8te3d-png/whozh8-Website.git",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/h8te3d-png/whozh8-Website.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/h8te3d-png/whozh8-Website/issues"
+  },
+  "homepage": "https://github.com/h8te3d-png/whozh8-Website#readme",
+  "dependencies": {
+    "@react-three/drei": "^10.7.7",
+    "@react-three/fiber": "^9.5.0",
+    "gsap": "^3.14.2",
+    "react": "^19.2.3",
+    "react-dom": "^19.2.3",
+    "three": "^0.182.0"
+  },
+  "devDependencies": {
+    "gh-pages": "^6.3.0",
+    "parcel": "^2.16.3"
+  }
+}
