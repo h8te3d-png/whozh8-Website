@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "start": "parcel index.html --open",
-    "build": "parcel build index.html",
+    "start": "parcel src/index.tsx --open",
+    "build": "parcel build src/index.tsx",
     "deploy": "gh-pages -d dist -r https://github.com/h8te3d-png/whozh8-Website.git",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
