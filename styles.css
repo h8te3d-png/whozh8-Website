@@ -13,6 +13,15 @@
     }
 }
 
+@keyframes drift {
+    0%, 100% {
+        transform: translateX(2.2%) translateY(-5%);
+    }
+    50% {
+        transform: translateX(-6.1%) translateY(17.5%);
+    }
+}
+
 @keyframes slideRight {
     0% {
         transform: translateX(0);
@@ -37,6 +46,27 @@ body {
     margin: 0;
     padding: 0;
     overflow-x: hidden;
+}
+
+.static-bg {
+    font-size: 12px;
+    font-family: sans-serif;
+    --token-cf50e1e4-7f55-4aa2-9af8-f61c3d25e531: rgb(243, 245, 151);
+    --token-7d2312d1-edd7-4229-828d-c62ca2e9628d: rgb(89, 252, 143);
+    --framer-aspect-ratio-supported: auto;
+    --framer-will-change-override: none;
+    pointer-events: none;
+    box-sizing: border-box;
+    -webkit-font-smoothing: inherit;
+    background: url("https://framerusercontent.com/images/rR6HYXBrMmX4cRpXfXUOvpB0.png");
+    opacity: 0.2;
+    inset: -200%;
+    width: 400%;
+    height: 400%;
+    position: absolute;
+    will-change: transform;
+    transform: translateX(2.2%) translateY(-5%);
+    z-index: -3;
 }
 
 .parallax-section {
@@ -73,42 +103,42 @@ body {
 }
 
 .bg1.layer1 {
-    background-image: url('images/bg1.jpg');
+    background-color: #f0f0f0;
     z-index: -2;
 }
 
 .bg1.layer2 {
-    background-image: url('images/bg1.jpg');
+    background-color: #e0e0e0;
     z-index: -1;
 }
 
 .bg2.layer1 {
-    background-image: url('images/bg2.jpg');
+    background-color: #d0d0d0;
     z-index: -2;
 }
 
 .bg2.layer2 {
-    background-image: url('images/bg2.jpg');
+    background-color: #c0c0c0;
     z-index: -1;
 }
 
 .bg3.layer1 {
-    background-image: url('images/bg3.jpg');
+    background-color: #b0b0b0;
     z-index: -2;
 }
 
 .bg3.layer2 {
-    background-image: url('images/bg3.jpg');
+    background-color: #a0a0a0;
     z-index: -1;
 }
 
 .bg4.layer1 {
-    background-image: url('images/bg4.jpg');
+    background-color: #909090;
     z-index: -2;
 }
 
 .bg4.layer2 {
-    background-image: url('images/bg4.jpg');
+    background-color: #808080;
     z-index: -1;
 }
 
@@ -163,9 +193,9 @@ body {
 
 .text-layer-2 {
     position: absolute;
-    top: 20%;
+    top: 50%;
     left: 50%;
-    transform: translate(-50%, -20%);
+    transform: translate(-50%, -50%);
     z-index: 30;
     font-size: 4vw;
     font-weight: 400;
@@ -201,18 +231,18 @@ body {
 @keyframes bounceIn {
     0% {
         opacity: 0;
-        transform: translate(-50%, -20%) scale(0);
+        transform: translate(-50%, -50%) scale(0);
     }
     50% {
         opacity: 1;
-        transform: translate(-50%, -20%) scale(1.2);
+        transform: translate(-50%, -50%) scale(1.2);
     }
     70% {
-        transform: translate(-50%, -20%) scale(0.9);
+        transform: translate(-50%, -50%) scale(0.9);
     }
     100% {
         opacity: 1;
-        transform: translate(-50%, -20%) scale(1);
+        transform: translate(-50%, -50%) scale(1);
     }
 }
 
