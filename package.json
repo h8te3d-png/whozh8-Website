@@ -8,11 +8,10 @@
     "react-dom": "^18.2.0",
     "three": "^0.182.0"
   },
-  "scripts": {
+   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
   }
-}
 }
